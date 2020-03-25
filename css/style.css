@@ -1,20 +1,26 @@
 * {
-    border: 1px solid #c06014;
     font-family: 'Oswald';
 }
 
 body{
     margin: 0 0 auto;
     background-color: #EDDBCD;
+    border: 1px solid #c06014;
 }
 
 header {
     background-color: #cdcdcd;
+    border: 1px solid #c06014;
+}
+
+.sideNav {
+    border: 1px solid #c06014;
 }
 
 .middleContainer{
     width: 70%;
     margin: auto;
+    border: 1px solid #c06014;
 }
 
 .selectionImage {
@@ -41,10 +47,12 @@ header {
 
 #sideBarBtn{
     width: 100%;
+    border: 1px solid #c06014;
 }
 
 .hide{
     display: none;
+    border: 1px solid #c06014;
 }
 
 .slider {
@@ -52,6 +60,7 @@ header {
     margin: 2% auto;
     position: relative;
     overflow: hidden;
+    border: 1px solid #c06014;
 }
 
 .slider figure {
