@@ -73,3 +73,7 @@ header {
     left: 0%;
 }
 
+#introBtn {
+    display: block;
+    margin: auto;
+}
