@@ -1,18 +1,26 @@
 * {
-    border: 1px solid green;
+    border: 1px solid #c06014;
+    font-family: 'Oswald';
 }
 
 body{
     margin: 0 0 auto;
+    background-color: #EDDBCD;
 }
 
 header {
-    background-color: darkgoldenrod;
+    background-color: #cdcdcd;
 }
 
 .middleContainer{
     width: 70%;
     margin: auto;
+}
+
+.selectionImage {
+    position: absolute;
+    top: 45%;
+    background-color: white; 
 }
 
 #consequenceSection{
@@ -62,14 +70,20 @@ header {
 
 
 #yeah{
-    position: absolute;
-    top: 45%;
     right: 0%;
+    height: 75px;
+    width: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #nope{
-    position: absolute;
-    top: 45%;
     left: 0%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 70px;
+    width: 70px;
 }
 
