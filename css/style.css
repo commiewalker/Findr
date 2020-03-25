@@ -1,18 +1,32 @@
 * {
-    border: 1px solid green;
+    font-family: 'Oswald';
 }
 
 body{
     margin: 0 0 auto;
+    background-color: #EDDBCD;
+    border: 1px solid #c06014;
 }
 
 header {
-    background-color: darkgoldenrod;
+    background-color: #cdcdcd;
+    border: 1px solid #c06014;
+}
+
+.sideNav {
+    border: 1px solid #c06014;
 }
 
 .middleContainer{
     width: 70%;
     margin: auto;
+    border: 1px solid #c06014;
+}
+
+.selectionImage {
+    position: absolute;
+    top: 45%;
+    background-color: white; 
 }
 
 #consequenceSection{
@@ -33,10 +47,12 @@ header {
 
 #sideBarBtn{
     width: 100%;
+    border: 1px solid #c06014;
 }
 
 .hide{
     display: none;
+    border: 1px solid #c06014;
 }
 
 .slider {
@@ -44,6 +60,7 @@ header {
     margin: 2% auto;
     position: relative;
     overflow: hidden;
+    border: 1px solid #c06014;
 }
 
 .slider figure {
@@ -62,15 +79,21 @@ header {
 
 
 #yeah{
-    position: absolute;
-    top: 45%;
     right: 0%;
+    height: 75px;
+    width: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #nope{
-    position: absolute;
-    top: 45%;
     left: 0%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 70px;
+    width: 70px;
 }
 
 #introBtn {
