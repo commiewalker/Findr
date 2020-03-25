@@ -13,7 +13,12 @@ $("#nope").click(function(){
 
     $("#pictureNext").fadeIn("slow");
 
-})
+});
+
+$("#introBtn").click(function(){
+        $(".intro").addClass("hide");
+        $(".middleContainer").removeClass("hide");
+});
 
 $("#yeah").click(function(){
     //Display detail
