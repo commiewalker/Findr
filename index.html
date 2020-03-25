@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCCCOROOOONAAAAAA</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js.js"></script>
+    <title>Finder</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
 </head>
+
 <body>
-    
-    
+
+
+    <header>
+        <img class="banner"
+            src="https://i0.wp.com/bestlifeonline.com/wp-content/uploads/2018/08/reserved-table-in-a-fancy-restaurant.jpg?resize=640%2C360&ssl=1">
+        <!-- Logo website, signator of website or something-->
+    </header>
+
+    <nav>
+        <button id="sideBarBtn">CRITERIA</button>
+    </nav>
+
+    <div class="intro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero quibusdam ratione nobis sunt, magnam molestiae ex aliquam eaque velit tempora nemo porro obcaecati, laboriosam dolorum omnis dicta hic! Tempore!</p>
+        <button id="introBtn">Okay</button>
+    </div>
+
+
+    <div class="sideNav hide">
+        <form>
+            <!-- input section -->
+            <label>Where : <input type="text" id="search"></label> <!-- where to eat *Must have-->
+            <label>Reduis : <input type="text" id="search"></label> <!-- mile reduis / location *Must have-->
+
+            <label><button type="submit" id="submitBtn" class="">Let's find out</button></label>
+            <label><button type="reset" id="clearBtn" class="">Let me think again</button></label>
+        </form>
+    </div> <!-- End of sideNav -->
+
+    <div class="middleContainer hide">
+
+        <div class="slider">
+            <figure>
+                <img id="pictureDisplay" src="pic/owl.jpg">
+                <img id="pictureNext" src="pic/ZxvMWb.png">
+            </figure>
+
+            <div class="selection">
+                <img id="nope" src="pic/nope.png">
+                <img id="yeah" src="pic/liked.png">
+            </div>
+        </div>
+        
+        <div id="consequenceSection" class="hide">
+            <p>Name : <span id="nameResult"></span></p>
+            <p>Rating : <span id="ratingResult"></span></p>
+            <p>Food type : <span id="typeResult"></span></p>
+            <p>Prices : <span id="pricesResult"></span></p>
+        </div>
+        
+        <!-- Map -->
+        <img id="locatePic" class="displayPic" src="">
+        
+        <div id="consequenceMapSection" class="hide">
+            
+            <!-- infomation about that place -->
+            <!-- direction , map, restuarant, distance, rating, food type, hours -->
+            <p>Distance from Location : <span id="typeResult"></span></p>
+            <p>Hours : <span id="hoursResult"></span></p>
+        </div>
+
+    </div> <!-- End of middle container-->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+    <script src="js/script.js"></script>		
+
 </body>
+
 </html>
