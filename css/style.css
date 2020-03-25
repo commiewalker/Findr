@@ -96,3 +96,7 @@ header {
     width: 70px;
 }
 
+#introBtn {
+    display: block;
+    margin: auto;
+}
