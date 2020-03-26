@@ -1,9 +1,19 @@
 $(document).ready(function(){
 
 
-$("#sideBarBtn").click(function(){
-    $(".sideNav").toggle("slow");
+$("#pickyYDBtn").click(function(){
+    $(".searchDropdown").toggle("slow");
 });
+
+$("#criteriaBtn").click(function(){
+    $(".searchDropdown").toggle("slow");
+})
+
+$("#introBtn").click(function(){
+    $(".intro").addClass("hide");
+    $(".middleContainer").removeClass("hide");
+});
+
 
 $("#nope").click(function(){
  
