@@ -1,9 +1,19 @@
 $(document).ready(function(){
 
 
-$("#sideBarBtn").click(function(){
-    $(".sideNav").toggle("slow");
+$("#pickyYDBtn").click(function(){
+    $(".searchDropdown").toggle("slow");
 });
+
+$("#criteriaBtn").click(function(){
+    $(".secondDropdown").toggle("slow");
+})
+
+$("#introBtn").click(function(){
+    $(".intro").addClass("hide");
+    $(".middleContainer").removeClass("hide");
+});
+
 
 $("#nope").click(function(){
  
@@ -15,17 +25,12 @@ $("#nope").click(function(){
 
 });
 
-$("#introBtn").click(function(){
-        $(".intro").addClass("hide");
-        $(".middleContainer").removeClass("hide");
-});
 
 $("#yeah").click(function(){
     //Display detail
     $("#consequenceSection").removeClass("hide");
     $("#consequenceMapSection").removeClass("hide");
-    
-    
+       
     
 })
 
