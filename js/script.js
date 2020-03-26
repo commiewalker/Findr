@@ -79,6 +79,7 @@ var zomatoKey = '988f4fabbfedfc82956b91c89b6ab1ea';
 
 
 
+
                         console.log("before: " +counter);
                         counter = counter +20;
                         var limit = response.results_found -20;
