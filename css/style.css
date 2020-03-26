@@ -4,40 +4,73 @@
 
 body{
     margin: 0 0 auto;
-    background-color: #EDDBCD;
-    border: 1px solid #c06014;
+    background-color: #cdcdcd;
 }
 
 header {
     background-color: #cdcdcd;
-    border: 1px solid #c06014;
+}
+
+.intro {
+    padding: 30px;
+    background-color: #eddbcd;
+    color: black;
+    text-align: center;
+    border: 2px solid #eddbcd;
+    border-radius: 15px;
+}
+
+.criteriaBtn {
+    font-size: 25px;
+    padding: 5px;
 }
 
 .sideNav {
-    border: 1px solid #c06014;
+    border: 2px solid #c06014;
+    background-color: #eddbcd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
 }
 
 .middleContainer{
     width: 70%;
     margin: auto;
-    border: 1px solid #c06014;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #c06014;
+    border-radius: 15px;
+    background-color: #eddbcd;
 }
 
 .selectionImage {
     position: absolute;
     top: 45%;
-    background-color: white; 
+    background-color: #eddbcd; 
+    border: 1px solid #c06014;
+    border-radius: 5px;
 }
 
-#consequenceSection{
+.selectionImage:hover {
+    background-color: white;
+}
+
+.results {
+    background-color: #c06014;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
     clear: both;
     text-align: left;
-    margin: 0 35%;
+    margin: 0 15%;
+    margin-bottom: 20px;
 }
 
 .banner {
     width: 100%;
-    height: 400px;
+    height: 250px;
 }
 
 .selectPic {
@@ -47,7 +80,9 @@ header {
 
 #sideBarBtn{
     width: 100%;
-    border: 1px solid #c06014;
+    color: white;
+    background-color: #c06014;
+    border: 2px solid #eddbcd;
 }
 
 .hide{
@@ -79,24 +114,37 @@ header {
 
 
 #yeah{
-    right: 0%;
-    height: 75px;
-    width: 75px;
-    padding-left: 20px;
-    padding-right: 20px;
+    right: .5%;
+    height: 55px;
+    width: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 #nope{
-    left: 0%;
+    left: .5%;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 70px;
-    width: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    width: 50px;
 }
 
 #introBtn {
     display: block;
     margin: auto;
+    color: white;
+    background-color: #c06014;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#introBtn:hover {
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
 }

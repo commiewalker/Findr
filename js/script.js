@@ -17,13 +17,16 @@ $("#nope").click(function(){
 
 $("#introBtn").click(function(){
         $(".intro").addClass("hide");
-        $(".middleContainer").removeClass("hide");
+        $(".slider").removeClass("hide");
+        $(".selection").removeClass("hide");
+        $(".criteriaBtn").removeClass("hide");
 });
 
 $("#yeah").click(function(){
     //Display detail
-    $("#consequenceSection").removeClass("hide");
-    $("#consequenceMapSection").removeClass("hide");
+    $(".results").removeClass("hide");
+    $(".locatePic").removeClass("hide");
+    // $("#consequenceMapSection").removeClass("hide");
     
     
     
