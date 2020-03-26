@@ -21,50 +21,45 @@
         <!-- Logo website, signator of website or something-->
     </header>
 
-    <nav>   <!-- two main button -->
-
-        <button id="pickyYDBtn">PICK YOUR DEMANDS</button>
-
-        <button id="criteriaBtn" >CRITERIA</button>
-
+    <nav>
+        <button class="criteriaBtn hide" id="sideBarBtn">FILTER YOUR OPTIONS</button>
+<!-- sub button-->
     </nav>
-
-    <div class="intro"> <!-- Intro -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero quibusdam ratione nobis sunt, magnam molestiae ex aliquam eaque velit tempora nemo porro obcaecati, laboriosam dolorum omnis dicta hic! Tempore!</p>
-        <button id="introBtn">Okay</button>
-    </div>
 
 
     <div class="searchDropdown hide">   <!-- display form after user click PICK YOUR DEMANDS-->
         <form>
-            <!-- input section -->
-            <label>Where : <input type="text" id="search"></label> <!-- where to eat *Must have-->
-            <label>Reduis : <input type="text" id="search"></label> <!-- mile reduis / location *Must have-->
+            <!-- Optional criteria input section -->
+            <label>Type of Food: <input type="text" id="search" id="foodType"></label>
+            <label>Maximum Price: <input type="text" id="search" id="priceMax"></label>
+            <label>Maximum Distance: <input type="text" id="search" id="distanceMax"></label> <!-- where to eat *Must have-->
+            <label>Minimum Rating: <input type="text" id="search" id="ratingMin"></label> <!-- mile reduis / location *Must have-->
 
-            <label><button type="submit" id="submitBtn" class="">Let's find out</button></label>
-            <label><button type="reset" id="clearBtn" class="">Let me think again</button></label>
+            <label><button type="submit" id="submitBtn" class="">Find My Food</button></label>
+            <label><button type="reset" id="clearBtn" class="">Start Over</button></label>
         </form>
     </div> <!-- End of sideNav -->
 
-    <div class="secondDropdown hide">
-        <!-- ##### NEED SOMETHING HERE AFTER USER CLICK CRITERIA-->
-    </div>
+    <div class="middleContainer">
 
-    <div class="middleContainer hide">
+        <div class="intro">
+            <p>Welcome to FINDR! We're here to help you decide where to eat as quickly as possible. When you're ready, we will randomly present you with a restaurant near you. If you're not feeling it, hit the red thumbs down and we'll show you the next option. If you like it, hit the green thumbs-up and we will show you the restaurant info so that you can go get your food! If you already have some thoughts about what you want to eat, add your criteria in the dropdown menu.</p>
+            <button id="introBtn">Lets Eat!</button>
+        </div>
 
-        <div class="slider">
+        <div class="slider hide">
             <figure>
                 <img id="pictureDisplay" src="pic/owl.jpg">
                 <img id="pictureNext" src="pic/ZxvMWb.png">
             </figure>
 
-            <div class="selection">
+            <div class="selection hide">
                 <img class="selectionImage" id="nope" src="pic/redThumbDislike.png">
                 <img class = "selectionImage" id="yeah" src="pic/greenThumbLike.png">
             </div>
         </div>
         
-        <div id="consequenceSection" class="hide">
+        <div class="results hide" id="consequenceSection">
             <p>Name: <span id="nameResult"></span></p>
             <p>Rating: <span id="ratingResult"></span></p>
             <p>Food type: <span id="typeResult"></span></p>
@@ -72,13 +67,14 @@
         </div>
         
         <!-- Map -->
-        <img id="locatePic" class="displayPic" src="">
+        <img class="locatePic hide" class="displayPic" src="">
         
-        <div id="consequenceMapSection" class="hide">
+        <div class="results hide" id="consequenceMapSection">
             
             <!-- infomation about that place -->
             <!-- direction , map, restuarant, distance, rating, food type, hours -->
-            <p>Distance from Location: <span id="typeResult"></span></p>
+            <p>Address: <span id="addressResult"></span></p>
+            <p>Distance from You: <span id="typeResult"></span></p>
             <p>Hours: <span id="hoursResult"></span></p>
         </div>
         

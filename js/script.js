@@ -6,7 +6,7 @@ $("#pickyYDBtn").click(function(){
 });
 
 $("#criteriaBtn").click(function(){
-    $(".secondDropdown").toggle("slow");
+    $(".searchDropdown").toggle("slow");
 })
 
 $("#introBtn").click(function(){
@@ -25,12 +25,20 @@ $("#nope").click(function(){
 
 });
 
+$("#introBtn").click(function(){
+        $(".intro").addClass("hide");
+        $(".slider").removeClass("hide");
+        $(".selection").removeClass("hide");
+        $(".criteriaBtn").removeClass("hide");
+});
 
 $("#yeah").click(function(){
     //Display detail
-    $("#consequenceSection").removeClass("hide");
-    $("#consequenceMapSection").removeClass("hide");
-       
+    $(".results").removeClass("hide");
+    $(".locatePic").removeClass("hide");
+    // $("#consequenceMapSection").removeClass("hide");
+    
+    
     
 })
 
