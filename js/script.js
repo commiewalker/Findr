@@ -1,11 +1,7 @@
 $(document).ready(function(){
 
 
-$("#pickyYDBtn").click(function(){
-    $(".searchDropdown").toggle("slow");
-});
-
-$("#criteriaBtn").click(function(){
+$("#sideBarBtn").click(function(){
     $(".searchDropdown").toggle("slow");
 })
 
@@ -34,8 +30,8 @@ $("#introBtn").click(function(){
 
 $("#yeah").click(function(){
     //Display detail
-    $(".results").removeClass("hide");
-    $(".locatePic").removeClass("hide");
+    $(".results").fadeIn();
+    $(".locatePic").fadeIn();
     // $("#consequenceMapSection").removeClass("hide");
     
     

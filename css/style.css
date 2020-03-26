@@ -37,16 +37,17 @@ header {
 
 footer {
     text-align: center;
-    display: block;
+    display: table;
     position: absolute;
     width: 100%;
     height: 5px;
-    bottom: 0;    
+    bottom: 5;    
     background-color: chocolate;
 }
 
 .middleContainer{
     width: 70%;
+    height: 100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -100,6 +101,10 @@ footer {
     border: 2px solid #eddbcd;
 }
 
+#sideBarBtn:hover{
+    color: yellow;
+}
+
 .hide{
     display: none;
     border: 1px solid #c06014;
@@ -127,14 +132,6 @@ footer {
     float: left;
 }
 
-/* .intro {
-    width: 100%;
-    height: 300px;
-    font-size: larger;
-    margin: 10% 0% auto;
-    text-align: center;    
-} */
-
 #yeah{
     right: .5%;
     height: 55px;
@@ -153,7 +150,7 @@ footer {
     width: 50px;
 }
 
-/* #introBtn {
+ #introBtn {
     display: block;
     margin: auto;
     color: white;
@@ -167,6 +164,6 @@ footer {
 }
 
 #introBtn:hover {
-    border: 2px solid #cdcdcd;
-    color: #cdcdcd;
-} */
+    border: 2px solid yellow;
+    color:yellow;
+} 
