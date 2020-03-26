@@ -32,9 +32,7 @@ $("#yeah").click(function(){
     //Display detail
     $(".results").fadeIn();
     $(".locatePic").fadeIn();
-    // $("#consequenceMapSection").removeClass("hide");
-    
-    
+    // $("#consequenceMapSection").removeClass("hide");  
     
 })
 
