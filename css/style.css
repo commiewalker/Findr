@@ -1,20 +1,9 @@
-#map {
-    height: 400px;
-    width: 100%;
-    margin: 10px 0% 15px auto;
-  }
-
-  
-  /* Optional: Makes the sample page fill the window. */
-  
-
 * {
     font-family: 'Oswald';
 }
 
 body{
     height: 100%;
-    margin: 0;
     padding: 0;
     margin: 0 0 auto;
     background-color: #cdcdcd;
@@ -31,8 +20,11 @@ header {
     text-align: center;
     border: 2px solid #eddbcd;
     border-radius: 15px;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
     border: 2px solid white;
 }
 
@@ -49,16 +41,6 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     margin: auto;
-}
-
-footer {
-    text-align: center;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    bottom: 0;    
-    background-color: chocolate;
 }
 
 .middleContainer{
@@ -103,18 +85,13 @@ footer {
 .searchDropdown{
     text-align: center;
     margin: 0 auto;
+    background-color: #eddbcd;
+    padding: 5px;
 }
 
 .selectPic {
     width: 70px;
     height: 70px;
-}
-
-#sideBarBtn{
-    width: 100%;
-    color: white;
-    background-color: #c06014;
-    border: 2px solid #eddbcd;
 }
 
 .hide{
@@ -127,7 +104,6 @@ footer {
     margin: 2% auto;
     position: relative;
     overflow: hidden;
-    border: 1px solid #c06014;
 }
 
 .slider figure {
@@ -141,18 +117,18 @@ footer {
 .slider figure img {
     width: 20%;
     max-height: 550px;
-    /* max-width: 1200px; */
-    object-fit: cover
+    object-fit: cover;
     float: left;
 }
 
-/* .intro {
+#sideBarBtn{
     width: 100%;
-    height: 300px;
-    font-size: larger;
-    margin: 10% 0% auto;
-    text-align: center;    
-} */
+    color: white;
+    background-color: #c06014;
+    border: 2px solid #eddbcd;
+    padding: 5px;
+    font-size: 20px;
+}
 
 #yeah{
     right: .5%;
@@ -173,8 +149,8 @@ footer {
 }
 
 #introBtn {
-    width: 500px;
-    height: 50px;
+    width: 30%;
+    height: 60px;
     font-size: large;
     display: block;
     margin: auto;
@@ -182,8 +158,6 @@ footer {
     background-color: #c06014;
     border: 2px solid white;
     border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
 } 
@@ -193,14 +167,31 @@ footer {
     color: #cdcdcd;
 } 
 
-#patch{
+#patch {
     position: absolute;
     width: 1000px;
     height: 1000px;
     z-index: 1;
     background-color: #cdcdcd;
-    /* border: 50px solid #cdcdcd;; */
     margin-left: -20px;
     margin-top: -20px;
-    
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 10px 0% 15px auto;
+  }
+
+#footer {
+    text-align: center;
+    width: 100%;
+    height: 25px;   
+    background-color: #c06014;
+    bottom: 0;
+    margin-top: 5px;
+    padding: 5px;
+    color: white;
+    font-size: 10px;
+}
+
