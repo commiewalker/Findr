@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finder</title>
+    <title>FINDR</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    
 
 </head>
 
@@ -16,66 +18,73 @@
 
     <header>
         <img class="banner"
-            src="https://i0.wp.com/bestlifeonline.com/wp-content/uploads/2018/08/reserved-table-in-a-fancy-restaurant.jpg?resize=640%2C360&ssl=1">
+            src="pic/bannerFinder.jpg" alt="FINDR Logo">
         <!-- Logo website, signator of website or something-->
     </header>
 
     <nav>
-        <button id="sideBarBtn">CRITERIA</button>
+        <button class="criteriaBtn hide" id="sideBarBtn">FILTER YOUR OPTIONS</button>
+<!-- sub button-->
     </nav>
 
-    <div class="intro">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero quibusdam ratione nobis sunt, magnam molestiae ex aliquam eaque velit tempora nemo porro obcaecati, laboriosam dolorum omnis dicta hic! Tempore!</p>
-        <button id="introBtn">Okay</button>
-    </div>
 
-
-    <div class="sideNav hide">
+    <div class="searchDropdown hide">   <!-- display form after user click PICK YOUR DEMANDS-->
         <form>
-            <!-- input section -->
-            <label>Where : <input type="text" id="search"></label> <!-- where to eat *Must have-->
-            <label>Reduis : <input type="text" id="search"></label> <!-- mile reduis / location *Must have-->
+            <!-- Optional criteria input section -->
+            <label>City Name: <input type="text"  id="cityName"></label>
+            <label>Maximum Distance in Miles: <input type="text"  id="distanceMax"></label> <!-- where to eat *Must have-->
+            
 
-            <label><button type="submit" id="submitBtn" class="">Let's find out</button></label>
-            <label><button type="reset" id="clearBtn" class="">Let me think again</button></label>
+            <label><button type="submit" id="submitBtn" class="">Find My Food</button></label>
+            <label><button type="reset" id="clearBtn" class="">Start Over</button></label>
         </form>
     </div> <!-- End of sideNav -->
 
+    <div class="intro">
+        <p>Welcome to FINDR! We're here to help you decide where to eat as quickly as possible. When you're ready, we will randomly present you with a restaurant near you. If you're not feeling it, hit the red thumbs down and we'll show you the next option. If you like it, hit the green thumbs-up and we will show you the restaurant info so that you can go get your food! If you already have some thoughts about what you want to eat, add your criteria in the dropdown menu.</p>
+        <button id="introBtn">Lets Eat!</button>
+    </div>
+
     <div class="middleContainer hide">
 
-        <div class="slider">
+        
+
+        <div class="slider hide">
             <figure>
                 <img id="pictureDisplay" src="pic/owl.jpg">
                 <img id="pictureNext" src="pic/ZxvMWb.png">
             </figure>
 
-            <div class="selection">
-                <img id="nope" src="pic/nope.png">
-                <img id="yeah" src="pic/liked.png">
+            <div class="selection hide">
+                <img class="selectionImage" id="nope" src="pic/redThumbDislike.png">
+                <img class = "selectionImage" id="yeah" src="pic/greenThumbLike.png">
             </div>
         </div>
-        
-        <div id="consequenceSection" class="hide">
+        <div id = patch></div>
+        <div id="consequenceSection" class="results hide">
             <p>Name : <span id="nameResult"></span></p>
-            <p>Rating : <span id="ratingResult"></span></p>
-            <p>Food type : <span id="typeResult"></span></p>
-            <p>Prices : <span id="pricesResult"></span></p>
+            <p>Address : <span id="AddressResult"></span></p>
+            <p>Rating : <span id="RatingResult"></span></p>
+            <p>Average Cost for 2 people : <span id="pricesResult"></span></p>
+            
+            <p>Distance from You: <span id="distance"></span></p>
+            <p>Hours: <span id="hourRest"></span></p>
+
         </div>
         
         <!-- Map -->
-        <img id="locatePic" class="displayPic" src="">
         
-        <div id="consequenceMapSection" class="hide">
-            
-            <!-- infomation about that place -->
-            <!-- direction , map, restuarant, distance, rating, food type, hours -->
-            <p>Distance from Location : <span id="typeResult"></span></p>
-            <p>Hours : <span id="hoursResult"></span></p>
-        </div>
-
+        <div id="map"></div>
+        
+        
     </div> <!-- End of middle container-->
-
-
+    
+    
+    <!-- <footer>
+        <p>copyright©</p>
+    </footer> -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWRhElirrFtf5xMrnvVJUmgIIP2NIwXM4"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
     <script src="js/script.js"></script>		
 
