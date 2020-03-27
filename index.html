@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    
 
 </head>
 
@@ -30,22 +31,23 @@
     <div class="searchDropdown hide">   <!-- display form after user click PICK YOUR DEMANDS-->
         <form>
             <!-- Optional criteria input section -->
-            <label>Type of Food: <input type="text" id="search" id="foodType"></label>
-            <label>Maximum Price: <input type="text" id="search" id="priceMax"></label>
-            <label>Maximum Distance: <input type="text" id="search" id="distanceMax"></label> <!-- where to eat *Must have-->
-            <label>Minimum Rating: <input type="text" id="search" id="ratingMin"></label> <!-- mile reduis / location *Must have-->
+            <label>City Name: <input type="text"  id="cityName"></label>
+            <label>Maximum Distance in Miles: <input type="text"  id="distanceMax"></label> <!-- where to eat *Must have-->
+            
 
             <label><button type="submit" id="submitBtn" class="">Find My Food</button></label>
             <label><button type="reset" id="clearBtn" class="">Start Over</button></label>
         </form>
     </div> <!-- End of sideNav -->
 
-    <div class="middleContainer">
+    <div class="intro">
+        <p>Welcome to FINDR! We're here to help you decide where to eat as quickly as possible. When you're ready, we will randomly present you with a restaurant near you. If you're not feeling it, hit the red thumbs down and we'll show you the next option. If you like it, hit the green thumbs-up and we will show you the restaurant info so that you can go get your food! If you already have some thoughts about what you want to eat, add your criteria in the dropdown menu.</p>
+        <button id="introBtn">Lets Eat!</button>
+    </div>
 
-        <div class="intro">
-            <p>Welcome to FINDR! We're here to help you decide where to eat as quickly as possible. When you're ready, we will randomly present you with a restaurant near you. If you're not feeling it, hit the red thumbs down and we'll show you the next option. If you like it, hit the green thumbs-up and we will show you the restaurant info so that you can go get your food! If you already have some thoughts about what you want to eat, add your criteria in the dropdown menu.</p>
-            <button id="introBtn">Lets Eat!</button>
-        </div>
+    <div class="middleContainer hide">
+
+        
 
         <div class="slider hide">
             <figure>
@@ -58,34 +60,31 @@
                 <img class = "selectionImage" id="yeah" src="pic/greenThumbLike.png">
             </div>
         </div>
-        
-        <div id="consequenceSection" class="hide">
+        <div id = patch></div>
+        <div id="consequenceSection" class="results hide">
             <p>Name : <span id="nameResult"></span></p>
             <p>Address : <span id="AddressResult"></span></p>
             <p>Rating : <span id="RatingResult"></span></p>
             <p>Average Cost for 2 people : <span id="pricesResult"></span></p>
+            
+            <p>Distance from You: <span id="distance"></span></p>
+            <p>Hours: <span id="hourRest"></span></p>
 
         </div>
         
         <!-- Map -->
-        <img class="locatePic hide" class="displayPic" src="">
         
-        <div class="results hide" id="consequenceMapSection">
-            
-            <!-- infomation about that place -->
-            <!-- direction , map, restuarant, distance, rating, food type, hours -->
-            <p>Address: <span id="addressResult"></span></p>
-            <p>Distance from You: <span id="typeResult"></span></p>
-            <p>Hours: <span id="hoursResult"></span></p>
-        </div>
+        <div id="map"></div>
         
-        <footer>
-            <p>copyright©</p>
-        </footer>
+        
     </div> <!-- End of middle container-->
     
-
-
+    
+    <!-- <footer>
+        <p>copyright©</p>
+    </footer> -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWRhElirrFtf5xMrnvVJUmgIIP2NIwXM4"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
     <script src="js/script.js"></script>		
 
