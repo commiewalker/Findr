@@ -1,8 +1,21 @@
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 10px 0% 15px auto;
+  }
+
+  
+  /* Optional: Makes the sample page fill the window. */
+  
+
 * {
     font-family: 'Oswald';
 }
 
 body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
     margin: 0 0 auto;
     background-color: #cdcdcd;
 }
@@ -12,16 +25,19 @@ header {
 }
 
 .intro {
-    padding: 30px;
+    padding: 30px ;
     background-color: #eddbcd;
     color: black;
     text-align: center;
     border: 2px solid #eddbcd;
     border-radius: 15px;
+    font-size: 25px;
+    margin-top: 20px;
+    border: 2px solid white;
 }
 
 .criteriaBtn {
-    font-size: 25px;
+    font-size: 15px;
     padding: 5px;
 }
 
@@ -53,6 +69,7 @@ footer {
     border: 2px solid #c06014;
     border-radius: 15px;
     background-color: #eddbcd;
+    /* height: 100%; */
 }
 
 .selectionImage {
@@ -74,7 +91,7 @@ footer {
     border-radius: 10px;
     clear: both;
     text-align: left;
-    margin: 0 15%;
+    margin: 10px 15%;
     margin-bottom: 20px;
 }
 
@@ -123,7 +140,9 @@ footer {
 
 .slider figure img {
     width: 20%;
-    height: 400px;
+    max-height: 550px;
+    /* max-width: 1200px; */
+    object-fit: cover
     float: left;
 }
 
@@ -153,7 +172,10 @@ footer {
     width: 50px;
 }
 
-/* #introBtn {
+#introBtn {
+    width: 500px;
+    height: 50px;
+    font-size: large;
     display: block;
     margin: auto;
     color: white;
@@ -164,9 +186,21 @@ footer {
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-}
+} 
 
 #introBtn:hover {
     border: 2px solid #cdcdcd;
     color: #cdcdcd;
-} */
+} 
+
+#patch{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    z-index: 1;
+    background-color: #cdcdcd;
+    /* border: 50px solid #cdcdcd;; */
+    margin-left: -20px;
+    margin-top: -20px;
+    
+}
