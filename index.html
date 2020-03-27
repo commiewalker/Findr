@@ -15,20 +15,19 @@
 
 <body>
 
-
+    <!-- Header with FINDR logo  -->
     <header>
         <img class="banner"
             src="pic/bannerFinder.jpg" alt="FINDR Logo">
-        <!-- Logo website, signator of website or something-->
     </header>
 
+    <!-- Optional criteria button  -->
     <nav>
         <button class="criteriaBtn hide" id="sideBarBtn">FILTER YOUR OPTIONS</button>
-<!-- sub button-->
     </nav>
 
-
-    <div class="searchDropdown hide">   <!-- display form after user click PICK YOUR DEMANDS-->
+    <!-- display form after user clicks criteria button-->
+    <div class="searchDropdown hide">   
         <form>
             <!-- Optional criteria input section -->
             <label>City Name: <input type="text"  id="cityName"></label>
@@ -40,54 +39,58 @@
         </form>
     </div> <!-- End of sideNav -->
 
+    <!-- Intro message pops up when user opens app  -->
     <div class="intro">
-        <p>Welcome to FINDR! We're here to help you decide where to eat as quickly as possible. When you're ready, we will randomly present you with a restaurant near you. If you're not feeling it, hit the red thumbs down and we'll show you the next option. If you like it, hit the green thumbs-up and we will show you the restaurant info so that you can go get your food! If you already have some thoughts about what you want to eat, add your criteria in the dropdown menu.</p>
+        <p>Welcome to FINDR! We're here to help you decide where to eat as quickly as possible. When you're ready, we will randomly present you with a restaurant near your current location. If you're not feeling it, hit the red thumbs-down and we'll show you the next random option. If you like it, hit the green thumbs-up and we will show you the restaurant info so that you can go eat up! If you want to check out options in a different city or want to change the size of your search area, click the Filter Your Options tab and add your criteria.</p>
         <button id="introBtn">Lets Eat!</button>
     </div>
 
+    <!-- Main content container  -->
     <div class="middleContainer hide">
 
-        
-
+        <!-- Slider with restaurant images -->
         <div class="slider hide">
             <figure>
-                <img id="pictureDisplay" src="pic/owl.jpg">
-                <img id="pictureNext" src="pic/ZxvMWb.png">
+                <img id="pictureDisplay" src="pic/Findr.png" alt="FINDR Loading Image">
+                <img id="pictureNext" src="pic/Findr.png" alt="FINDR Loading Image">
             </figure>
 
+            <!-- Like/Dislike buttons  -->
             <div class="selection hide">
-                <img class="selectionImage" id="nope" src="pic/redThumbDislike.png">
-                <img class = "selectionImage" id="yeah" src="pic/greenThumbLike.png">
+                <img class="selectionImage" id="nope" src="pic/redThumbDislike.png" alt="Dislike Button">
+                <img class = "selectionImage" id="yeah" src="pic/greenThumbLike.png" alt="Like Button">
             </div>
         </div>
+
         <div id = patch></div>
+
+        <!-- Restaurant info  -->
         <div id="consequenceSection" class="results hide">
             <p>Name : <span id="nameResult"></span></p>
             <p>Address : <span id="AddressResult"></span></p>
             <p>Rating : <span id="RatingResult"></span></p>
             <p>Average Cost for 2 people : <span id="pricesResult"></span></p>
-            
             <p>Distance from You: <span id="distance"></span></p>
             <p>Hours: <span id="hourRest"></span></p>
-
         </div>
         
         <!-- Map -->
-        
         <div id="map"></div>
         
         
     </div> <!-- End of middle container-->
     
-    
-    <!-- <footer>
-        <p>copyright©</p>
-    </footer> -->
-    
+    <!-- Footer  -->
+    <div>
+    <footer class="footer hide" id="footer">Copyright © FINDR 2020. All rights reserved.</footer>
+    </div>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWRhElirrFtf5xMrnvVJUmgIIP2NIwXM4"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
     <script src="js/script.js"></script>		
 
 </body>
+
+
 
 </html>

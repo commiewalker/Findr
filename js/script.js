@@ -1,5 +1,3 @@
-
-
 var zomatoKey = '988f4fabbfedfc82956b91c89b6ab1ea';
 var input = 'new york'
 var lat;
@@ -7,7 +5,6 @@ var lng;
 var getLocationURL = 'https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCWRhElirrFtf5xMrnvVJUmgIIP2NIwXM4';
 var counter = 0;
 var map;
-
 
     // retrieve the current coordinates and calls the GetGEOData function
     function GetGeoLocation() {
@@ -36,8 +33,7 @@ var map;
 
 
             QueryURL = 'https://developers.zomato.com/api/v2.1/search?entity_id=' + ID + '&entity_type=city&count=100&radius=8000'
-            GetRestaurantData(QueryURL)
-            //  console.log(lng)            
+            GetRestaurantData(QueryURL)            
         })
     }
 
@@ -81,18 +77,14 @@ var map;
             $("#pictureNext").attr("src", restPic);
             console.log(response);
 
-
             $("#pictureDisplay").fadeOut("slow");
             $("#pictureNext").fadeIn("slow");
             $("#pictureDisplay").attr("src", restPic);
 
-
             // if the No button is clicked
             $(document).ready(function () {
                 $("#nope").unbind().click(function (event) {
-
                     event.preventDefault();
-
 
                     counter = counter + 20;
                     var limit = response.results_found - 20;
@@ -105,10 +97,7 @@ var map;
 
                     GetRestaurantData(url);
 
-
-
                 });//END of function No Button
-
 
                 // if the YES button is clicked
                 $("#yeah").click(function () {
@@ -116,8 +105,7 @@ var map;
                     $("#patch").remove();
                     $("#consequenceSection").removeClass("hide");
                     $("#consequenceMapSection").removeClass("hide");
-
-
+                    $(".footer").removeClass("hide");
 
                     var restName = rest.name;
                     var restAddress = rest.location.address;
@@ -129,17 +117,14 @@ var map;
 
                     console.log(hourRest);
 
-                    
                     console.log(latRest)
                     console.log(lngRest)
-
 
                     $("#nameResult").text(restName);
                     $("#AddressResult").text(restAddress);
                     $("#RatingResult").text(restRating);
                     $("#pricesResult").text(cost + "$");
                     $("#hourRest").text(hourRest);
-
 
                     var x1 = latRest;
                     var x2 = lat;
@@ -156,27 +141,11 @@ var map;
 
                     initMap(latRest, lngRest, restName);
 
-
-
-
                 });//END of function yes Button
 
             });// END of documentReady
 
-
-
-            // RENDER
-            // $(document).ready(function(){
-
-            // if button criteria is pressed the settings disappear
-            // $("#sideBarBtn").click(function(){
-            //     $(".sideNav").toggle("slow");
-            // });
-
-
-
         }) //END of THEN
-
 
     }  //End of GetRestaurantData function
 
@@ -190,15 +159,13 @@ var map;
             map: map,
             title: "FINDR says:"+ name
           });
-  
     }
 
     GetGeoLocation(getLocationURL);
 
-
     $("#introBtn").click(function (event) {
         event.preventDefault();
-        $(".banner").height("90px");
+        $(".banner").height("100px");
         $(".middleContainer").removeClass("hide");
         $(".intro").addClass("hide");
         $(".slider").removeClass("hide");
@@ -209,8 +176,6 @@ var map;
     $("#sideBarBtn").click(function () {
         $(".searchDropdown").fadeToggle();
     });
-
-    
 
     $("#submitBtn").click(function(event){
         event.preventDefault();
